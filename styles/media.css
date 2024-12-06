@@ -1,0 +1,201 @@
+/* Media Page Styles */
+.media-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Featured Media Section */
+.featured-media {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.featured-media h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-intro {
+    color: #34495e;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+    line-height: 1.6;
+}
+
+.featured-video-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.featured-video {
+    width: 100%;
+    max-width: 800px;
+    margin: 1rem auto;
+    border-radius: 4px;
+}
+
+.video-description {
+    color: #7f8c8d;
+    margin-top: 1rem;
+}
+
+/* Video Grid Styles */
+.video-grid,
+.audio-grid,
+.showcase-grid,
+.download-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Section Styles */
+.recipe-tutorials,
+.audio-tips,
+.product-showcase,
+.download-section {
+    margin-bottom: 4rem;
+}
+
+.recipe-tutorials h2,
+.audio-tips h2,
+.product-showcase h2,
+.download-section h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.video-card,
+.audio-card,
+.showcase-item,
+.download-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-card:hover,
+.audio-card:hover,
+.showcase-item:hover,
+.download-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Video Styles */
+video {
+    width: 100%;
+    border-radius: 4px 4px 0 0;
+}
+
+/* Audio Styles */
+audio {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* Card Content */
+.video-card h3,
+.audio-card h3,
+.showcase-item h3,
+.download-card h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.video-card p,
+.audio-card p,
+.showcase-item p,
+.download-card p {
+    color: #7f8c8d;
+    margin: 0 1rem 1rem;
+    line-height: 1.5;
+}
+
+/* Download Button */
+.download-button {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 0 1rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .media-container {
+        padding: 1rem;
+    }
+
+    .featured-media h1 {
+        font-size: 2rem;
+    }
+
+    .featured-video-container {
+        padding: 1rem;
+    }
+
+    .video-grid,
+    .audio-grid,
+    .showcase-grid,
+    .download-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .featured-media h1 {
+        font-size: 1.8rem;
+    }
+
+    .video-card h3,
+    .audio-card h3,
+    .showcase-item h3,
+    .download-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .download-button {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .media-container {
+        padding: 0;
+    }
+
+    video,
+    audio,
+    .download-button {
+        display: none;
+    }
+
+    .video-card,
+    .audio-card,
+    .showcase-item,
+    .download-card {
+        box-shadow: none;
+        break-inside: avoid;
+    }
+} 

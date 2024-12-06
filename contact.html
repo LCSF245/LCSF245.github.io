@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - SmoothBlend</title>
+    <!-- External CSS and JavaScript -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo.png">
+    <script src="script.js" defer></script>
+</head>
+<!-- 
+    Author: Mahimai Raja Johnson Rajaprabhu
+    Student Number: C0942788
+-->
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.png" alt="SmoothBlend Logo" width="100" height="50">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="specials.html">Specials</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="faqs.html">FAQs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-container">
+        <section class="contact-intro">
+            <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Please fill out the form below and we'll get back to you as soon as possible.</p>
+            
+            <ol class="form-instructions">
+                <li>All fields marked with an asterisk (*) are required</li>
+                <li>Please provide accurate contact information</li>
+                <li>Response time: within 24-48 business hours</li>
+            </ol>
+        </section>
+
+        <section class="contact-form-section">
+            <form class="contact-form" action="#" method="POST">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="fullname">Full Name</label>
+                        <input type="text" id="fullname" name="fullname" required autofocus
+                               placeholder="Enter your full name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                               placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone"
+                               placeholder="(123) 456-7890">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Product Interest</legend>
+                    
+                    <div class="form-group">
+                        <label for="product">Product Category</label>
+                        <select id="product" name="product" required>
+                            <option value="">Select a product category</option>
+                            <option value="blender">Blenders</option>
+                            <option value="processor">Food Processors</option>
+                            <option value="juicer">Juicers</option>
+                            <option value="accessories">Accessories</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interest Type</label>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="interest" value="purchase" required>
+                                Purchase
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="interest" value="support" required>
+                                Product Support
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="interest" value="training" required>
+                                Training
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="purchase-date">Purchase Date</label>
+                        <input type="date" id="purchase-date" name="purchase-date">
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required
+                                  placeholder="Please provide details about your inquiry..."></textarea>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            Subscribe to our newsletter
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="terms" value="accepted" required>
+                            I agree to the terms and conditions
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Submit Request</button>
+                    <button type="reset" class="btn-reset">Reset Form</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="contact-info">
+            <h2>Other Ways to Reach Us</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <h3>Customer Support</h3>
+                    <p>Phone: 1-800-SMOOTH-BLEND</p>
+                    <p>Email: support@smoothblend.com</p>
+                    <p>Hours: Mon-Fri, 9AM-6PM EST</p>
+                </div>
+                <div class="contact-card">
+                    <h3>Visit Our Store</h3>
+                    <address>
+                        Lambton College<br>
+                        Sarnia, ON N7S 5R7<br>
+                        Canada
+                    </address>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© Copyright 2024. All Rights Reserved.</p>
+        <p><a href="mailto:info@smoothblend.com">Request information</a></p>
+        <p>Mahimai Raja Johnson Rajaprabhu   C0942788</p>
+    </footer>
+</body>
+</html> 

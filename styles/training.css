@@ -1,0 +1,193 @@
+/* Training Page Styles */
+.training-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Training Intro Section */
+.training-intro {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.training-intro h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.training-intro p {
+    color: #34495e;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin-bottom: 3rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.training-schedule {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+
+.training-schedule caption {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.training-schedule th,
+.training-schedule td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.training-schedule th {
+    background-color: #2c3e50;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.05em;
+}
+
+/* Alternating Row Colors */
+.training-schedule tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+/* Row Hover Effect */
+.training-schedule tbody tr:hover {
+    background-color: #e8f4f8;
+    transition: background-color 0.3s ease;
+}
+
+/* Price Column Styling */
+.training-schedule td:last-child {
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Training Info Section */
+.training-info {
+    margin-top: 4rem;
+}
+
+.training-info h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.info-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.info-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info-card ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.info-card ul li::before {
+    content: "•";
+    color: #3498db;
+    position: absolute;
+    left: 0;
+}
+
+.info-card address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .training-container {
+        padding: 1rem;
+    }
+
+    .training-intro h1 {
+        font-size: 2rem;
+    }
+
+    .training-schedule caption {
+        font-size: 1.2rem;
+    }
+
+    .training-schedule th,
+    .training-schedule td {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    /* Stack info cards on mobile */
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .training-schedule th,
+    .training-schedule td {
+        padding: 0.6rem;
+        font-size: 0.8rem;
+    }
+
+    .info-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .training-schedule {
+        box-shadow: none;
+    }
+
+    .training-schedule th {
+        background-color: #f8f9fa !important;
+        color: #2c3e50 !important;
+    }
+
+    .info-card {
+        break-inside: avoid;
+        box-shadow: none;
+    }
+} 
